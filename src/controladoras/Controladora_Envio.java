@@ -89,7 +89,6 @@ public class Controladora_Envio implements Initializable {
         }
     }
 
-    // todo usuario y contraseña de la controladora_login
     public void SendMail() {
         Properties props = new Properties();
         // conexiones con gmail
@@ -112,7 +111,7 @@ public class Controladora_Envio implements Initializable {
             // rellenar el mensaje
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(user));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(tDestino.getText())); //todo
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(tDestino.getText()));
             message.setSubject(String.valueOf(tAsunto.getText()));
             message.setText(String.valueOf(tContenido.getText()));
             // mandar mensaje y popup de exito
