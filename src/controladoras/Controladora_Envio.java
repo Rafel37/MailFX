@@ -73,11 +73,6 @@ public class Controladora_Envio implements Initializable {
             else if (event.getSource() == cancelar) {
                 stage = (Stage) cancelar.getScene().getWindow();
                 stage.close();
-
-
-                System.out.println(tDestino.getText());
-                System.out.println(tAsunto.getText());
-                System.out.println(tContenido.getText());
             }
 
             // BOTON LIMPIAR
@@ -100,7 +95,6 @@ public class Controladora_Envio implements Initializable {
         props.put("mail.smtp.port", "587");
 
         // recoger usuario y contraseña
-//        Session session = Session.getInstance(props, null);
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
