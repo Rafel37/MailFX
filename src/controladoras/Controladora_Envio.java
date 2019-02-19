@@ -75,7 +75,6 @@ public class Controladora_Envio implements Initializable {
                 stage.close();
 
 
-                //manuel.garcia.bot@gmail.com
                 System.out.println(tDestino.getText());
                 System.out.println(tAsunto.getText());
                 System.out.println(tContenido.getText());
