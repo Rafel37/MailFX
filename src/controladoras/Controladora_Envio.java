@@ -22,24 +22,16 @@ public class Controladora_Envio implements Initializable {
 
 
     String user,pas;
-
-
     @FXML
     TextArea tContenido;
     @FXML
     JFXTextField tDestino, tAsunto;
     @FXML
     JFXButton enviar, cancelar, limpiar;
-    @FXML
-    Label usuarioFrom;
 
-    String to;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        usuarioFrom.setText(user);
-
-        to = String.valueOf(tDestino);
         acciones();
     }
 
@@ -73,11 +65,6 @@ public class Controladora_Envio implements Initializable {
             else if (event.getSource() == cancelar) {
                 stage = (Stage) cancelar.getScene().getWindow();
                 stage.close();
-
-
-                System.out.println(tDestino.getText());
-                System.out.println(tAsunto.getText());
-                System.out.println(tContenido.getText());
             }
 
             // BOTON LIMPIAR
@@ -100,7 +87,6 @@ public class Controladora_Envio implements Initializable {
         props.put("mail.smtp.port", "587");
 
         // recoger usuario y contraseña
-//        Session session = Session.getInstance(props, null);
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {

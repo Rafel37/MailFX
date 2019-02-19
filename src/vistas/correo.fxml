@@ -14,49 +14,38 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <Label text="NUEVO CORREO" />
-       <Label text="De: " GridPane.halignment="LEFT" GridPane.rowIndex="1">
-           <GridPane.margin>
-               <Insets left="20.0" right="10.0" />
-           </GridPane.margin>
-       </Label>
-       <Label fx:id="usuarioFrom" prefHeight="15.0" prefWidth="510.0" text="Label" GridPane.rowIndex="1">
-           <padding>
-               <Insets left="10.0" right="20.0" />
-           </padding>
-       </Label>
-      <JFXTextField fx:id="tDestino" promptText="Destinatario" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <JFXTextField fx:id="tDestino" promptText="Destinatario" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <GridPane.margin>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </GridPane.margin>
       </JFXTextField>
-      <JFXTextField fx:id="tAsunto" promptText="Asunto" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <JFXTextField fx:id="tAsunto" promptText="Asunto" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <GridPane.margin>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </GridPane.margin>
       </JFXTextField>
-       <TextArea fx:id="tContenido" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.rowIndex="4" GridPane.rowSpan="2">
+       <TextArea fx:id="tContenido" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.rowIndex="3" GridPane.rowSpan="2">
            <GridPane.margin>
                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
            </GridPane.margin>
        </TextArea>
-      <JFXButton fx:id="enviar" text="ENVIAR" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+      <JFXButton fx:id="enviar" text="ENVIAR" GridPane.halignment="LEFT" GridPane.rowIndex="5">
          <GridPane.margin>
             <Insets left="50.0" right="10.0" />
          </GridPane.margin>
       </JFXButton>
-      <JFXButton fx:id="cancelar" text="CANCELAR" GridPane.rowIndex="6">
+      <JFXButton fx:id="cancelar" text="CANCELAR" GridPane.rowIndex="5">
          <GridPane.margin>
             <Insets left="10.0" right="10.0" />
          </GridPane.margin>
       </JFXButton>
-      <JFXButton fx:id="limpiar" text="LIMPIAR" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+      <JFXButton fx:id="limpiar" text="LIMPIAR" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
          <GridPane.margin>
             <Insets left="10.0" right="50.0" />
          </GridPane.margin>
